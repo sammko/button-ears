@@ -1,0 +1,13 @@
+[package]
+name = "button-ears"
+version = "0.2.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+argh = "0.1.12"
+evdev = { version = "0.12.2", features = ["tokio"] }
+futures = "0.3.30"
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros", "process"] }
