@@ -9,5 +9,6 @@ edition = "2021"
 anyhow = "1.0.86"
 argh = "0.1.12"
 evdev = { version = "0.12.2", features = ["tokio"] }
-futures = "0.3.30"
-tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros", "process"] }
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros", "process", "io-std", "io-util"] }
+tokio-stream = { version = "0.1.16", features = ["io-util"] }
+udev = "0.9.0"
