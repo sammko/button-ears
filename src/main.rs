@@ -100,6 +100,7 @@ async fn main() -> Result<(), Error> {
                         }
                     },
                     Err(_) => {
+                        eprintln!("Removing device {}", key.display());
                         stream_map.remove(&key);
                     }
                 }
